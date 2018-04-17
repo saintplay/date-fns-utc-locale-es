@@ -1,0 +1,52 @@
+{
+  "name": "@4keys/date-fns-utc-locale-es",
+  "version": "1.0.0",
+  "description": "Spanish date-fns Locales with first support for UTC",
+  "keywords": [
+    "dates",
+    "date-fns",
+    "date-formating",
+    "utc",
+    "timezones"
+  ],
+  "author": {
+    "name": "Diego Jara",
+    "email": "saintplay96@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saintplay/date-fns-utc-locale-es.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saintplay/date-fns-utc-locale-es/issues"
+  },
+  "main": "dist/date-fns-utc-locale-es.min.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "webpack --env build",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "mocha --require babel-core/register --colors ./test/*.spec.js",
+    "test:watch": "mocha --require babel-core/register --colors -w ./test/*.spec.js",
+    "lint": "eslint --fix src/"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.10.0",
+    "eslint-loader": "^1.9.0",
+    "mocha": "*",
+    "webpack": "^3.8.1",
+    "yargs": "^10.0.3"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "date-fns": "^1.29.0"
+  }
+}
